@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Favorites</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+<div id="header"></div>
+
+<div id="site-content">
+    <h1 class="page-title">Games!</h1>
+
+
+    <div class="game-clicker-content">
+        <h2>Clicker Game</h2>
+
+        <p>Score: <span id="game-clicker-score">0</span></p>
+        <button id="game-clicker-clicker">Click me!</button>
+    </div>
+
+    <div class="game-rps-content">
+        <h2>Rock, Paper, Scissors</h2>
+        <p>Choose your move:</p>
+        <button class="game-rps-button" data-choice="rock">Rock</button>
+        <button class="game-rps-button" data-choice="paper">Paper</button>
+        <button class="game-rps-button" data-choice="scissors">Scissors</button>
+        <p>You chose: <span id="game-rps-player-choice"></span></p>
+        <p>Computer chose: <span id="game-rps-computer-choice"></span></p>
+        <p>Result: <span id="game-rps-result"></span></p>
+    </div>
+
+    <div class="game-number-guesser-content">
+        <h2>Number Guesser</h2>
+        <p>Guess a number between 1 and 100:</p>
+        <label for="game-number-guesser-input">Your Guess: </label><input type="number" id="game-number-guesser-input" min="1" max="100">
+        <button id="game-number-guesser-button">Guess</button>
+        <p id="game-number-guesser-result">Ready for your first guess.</p>
+        <p id="game-number-guesser-previous-lbl">Your previous Guesses: </p>
+        <p id="game-number-guesser-previous-dis">(Waiting for your guess)</p>
+        <div id="game-number-guesser-img"></div>
+    </div>
+</div>
+
+<div id="footer"></div>
+</body>
+
+<script src="../js/games.js"></script>
+
+<!-- Assisted by https://www.freecodecamp.org/news/reusable-html-components-how-to-reuse-a-header-and-footer-on-a-website/-->
+<script>
+    fetch('../templates/header.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('header').innerHTML = data)
+        .catch(err => console.error('Failed to load header:', err));
+</script>
+<script>
+    fetch('../templates/footer.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('footer').innerHTML = data)
+        .catch(err => console.error('Failed to load footer:', err));
+</script>

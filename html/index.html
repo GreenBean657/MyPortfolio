@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Me!</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+<div id="header"></div>
+
+<div id="site-content">
+    <h1 class="page-title">About Me!</h1>
+
+    <article id="about">
+        <h2 class="section-title">Nathaniel Cruz</h2>
+        <figure class="labeled-image">
+            <img src="../assets/me.jpg" alt="Nathaniel Cruz">
+            <figcaption class="paragraph"><i>Nathaniel Cruz</i></figcaption>
+        </figure>
+        <p class="paragraph">
+            AI Engineering Student
+            <br>
+            Neumont College of Computer Science
+            <br>
+            <strong>Graduation Date:</strong> Fall 2027
+        </p>
+
+        <p class="paragraph">
+            I am Nathaniel Cruz, an experienced computer programmer and computer repair specialist based in Salt Lake City. I have 6 years of experience in a wide range of programming languages, including LUA-U, Python, Java, and MadCommands. As for computer repair, I have 4 years of experience, working with projectors, server & consumer hardware, and micro-controller troubleshooting. I am extremely passionate about problem-solving and optimization, doing my best to bring a detail-oriented approach to every project I work on.
+            <br>
+            <br>
+            I am currently pursuing a degree in <strong><em>AI Engineering</em></strong> at <a href="https://neumont.edu">Neumont college of Computer Science</a>, self-specializing in low level AI programming involving direct access to GPU resources via HIP and CUDA libraries.
+        </p>
+    </article>
+</div>
+
+<div id="footer"></div>
+</body>
+<!-- Assisted by https://www.freecodecamp.org/news/reusable-html-components-how-to-reuse-a-header-and-footer-on-a-website/-->
+
+<script>
+    fetch('../templates/header.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('header').innerHTML = data)
+        .catch(err => console.error('Failed to load header:', err));
+</script>
+<script>
+    fetch('../templates/footer.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('footer').innerHTML = data)
+        .catch(err => console.error('Failed to load footer:', err));
+</script>

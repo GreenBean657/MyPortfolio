@@ -1,0 +1,49 @@
+body {
+    background: #f5f5f5;
+}
+
+body {
+    font-family: "Adwaita Sans", sans-serif;
+    background: linear-gradient(135deg, #ffffff 0%, #c2c2c2 100%);
+}
+
+.page-title {
+    color: #0a7082;
+}
+
+
+/* Header styles */
+.main-navigation-menu {
+    justify-content: center; /* Center the menu items */
+    align-items: center; /* Center the menu items */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Set to horizontal layout */
+    gap: 20px;
+    background-color: #d2d2f2; /* Background color for the menu */
+}
+
+
+.main-navigation-menu li a {
+    text-decoration: none; /* Remove underline */
+    color: black;
+    padding: 5px 10px;
+}
+/* Footer styles */
+.footer {
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+
+    left: 0;
+    background-color: #d2d2d2;
+}
+
+.footer-text {
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    font-family: "Adwaita Sans", serif;
+    /* Font Family = Font, backup font */
+}
