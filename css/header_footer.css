@@ -1,0 +1,17 @@
+.main-navigation-menu {
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    background-color: #91a772;
+}
+
+
+.main-navigation-menu li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+}
