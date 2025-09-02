@@ -4,3 +4,19 @@ body {
     padding: 0;
     background: linear-gradient(#b6d7a8, #d7f5cb);
 }
+.centered {
+    text-align: center;
+    display: block;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.reduced-padding {
+    padding: 1px;
+    margin: 5px;
+}
+
+.adjusted-margin {
+    margin-left: 15%;
+    margin-right: 15%;
+}

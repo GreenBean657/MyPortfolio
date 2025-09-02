@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Me!</title>
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/skills.css">
+</head>
+
+<body>
+<div id="header"></div>
+
+
+<div id="site-content">
+    <article id="header-about">
+        <h1 class="centered reduced-padding">My Skills!</h1>
+    </article>
+    <article id="content-about">
+        <figure class="labeled-image centered reduced-padding">
+            <img class= "cpp-logo" src="assets/cpp-logo.png" alt="C++ Logo">
+            <figcaption class="paragraph"><i>My Main Skill</i></figcaption>
+        </figure>
+        <p class="paragraph centered reduced-padding adjusted-margin">
+            <br>
+            Over my years of programming. I have worked with a variety of programming languages, my collection only growing the more time I spend at my college. Even despite everything I know, I have a favorite - my main focus has been on <strong><em>C++</em></strong>. The performance of C++ and under the hood complexity of the language is undoubtably inciting.
+            <br>
+            <br>
+            My current, most passionate project yet, has been teaching myself HIP, a programming language intended to unify GPU programming across AMD and NVIDIA hardware. This has been a challenge, but I am excited to continue learning more about it.
+            <br>
+            <br>
+            <strong>I have worked with: </strong>
+        </p>
+        <ul class="ul-centered">
+            <li>C++</li>
+            <li>Python</li>
+            <li>LUA-U</li>
+            <li>MadCommands</li>
+            <li>HTML/CSS/JS</li>
+            <li>SQL</li>
+            <li>Java</li>
+            <li>And More!</li>
+        </ul>
+
+    </article>
+</div>
+
+<div id="footer"></div>
+</body>
+
+<script>
+    fetch('../templates/header.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('header').innerHTML = data)
+        .catch(err => console.error('Failed to load header:', err));
+</script>
+<script>
+    fetch('../templates/footer.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('footer').innerHTML = data)
+        .catch(err => console.error('Failed to load footer:', err));
+</script>

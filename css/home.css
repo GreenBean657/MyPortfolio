@@ -2,19 +2,10 @@
     height: auto;
     margin-top: 20px;
 }
-.centered {
-    text-align: center;
-    display: block;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.reduced-padding {
-    padding: 1px;
-    margin: 5px;
-}
 
-.adjusted-margin {
-    margin-left: 15%;
-    margin-right: 15%;
-}
+.slideshow-content {
+    max-width: 20%;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: auto;
+    border-radius: 10px;}
