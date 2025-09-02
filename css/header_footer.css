@@ -1,8 +1,19 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
 .main-navigation-menu {
     justify-content: center;
     align-items: center;
     list-style: none;
-    padding: 5px;
+    padding: 8px;
     margin: 0;
     display: flex;
     gap: 20px;
@@ -14,4 +25,16 @@
     text-decoration: none;
     color: black;
     padding: 5px 10px;
+}
+
+#site-content {
+    flex: 1;
+}
+
+.footer {
+    background-color: #91a772;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
 }

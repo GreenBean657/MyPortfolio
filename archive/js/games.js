@@ -113,7 +113,7 @@ numberButton.addEventListener("click", function() {
 })
 
 /*
-    fetch('../templates/footer.html')
+    fetch('../templates/footer.archive')
         .then(response => response.text())
         .then(data => document.getElementById('footer').innerHTML = data)
         .catch(err => console.error('Failed to load footer:', err));
