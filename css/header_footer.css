@@ -17,7 +17,7 @@ body {
     margin: 0;
     display: flex;
     gap: 20px;
-    background-color: #91a772;
+    background-color: #91a772; /* 91a772 */
 }
 
 
@@ -32,9 +32,11 @@ body {
 }
 
 .footer {
+
     background-color: #91a772;
     color: black;
     text-align: center;
     padding: 10px 0;
     width: 100%;
 }
+

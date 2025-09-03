@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Me!</title>
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/projects.css">
+</head>
+
+<body>
+<div id="header"></div>
+
+
+<div id="site-content">
+
+    <h1 class="page-title centered">My Projects!</h1>
+    <article id="project-1">
+    <figure class="labeled-image skewed-left img">
+        <img class="skewed-left" src="/assets/cat.gif" alt="Project 1">
+        <figcaption class="skewed-left paragraph"><i>Project 1</i></figcaption>
+    </figure>
+    <div class="skewed-left">
+        <p class="skewed-left">
+            We were told we could put anything here if we don't have projects to show off, so I logically placed this amazing cat as a project placeholder.
+            Fun fact, this writing is also a placeholder! Bet you didn't expect that, huh?
+            This project involves... bleh bleh bleh, meow meow meow (cat noises).
+        </p>
+    </div>
+    </article>
+
+    <article id="project-2">
+        <figure class="labeled-image skewed-right img">
+            <img class="skewed-right" src="/assets/cat.gif" alt="Project 2">
+            <figcaption class="skewed-right paragraph"><i>Project 2</i></figcaption>
+        </figure>
+        <div class="skewed-right">
+            <p class="skewed-right">
+                We were told we could put anything here if we don't have projects to show off, so I logically placed this amazing cat as a project placeholder.
+                Fun fact, this writing is also a placeholder! Bet you didn't expect that, huh?
+                This project involves... bleh bleh bleh, meow meow meow (cat noises). This one I wrote extra text into.
+            </p>
+        </div>
+    </article>
+
+    <article id="project-3">
+        <figure class="labeled-image skewed-left img">
+            <img class="skewed-left" src="/assets/cat.gif" alt="Project 3">
+            <figcaption class="skewed-left paragraph"><i>Project 3</i></figcaption>
+        </figure>
+        <div class="skewed-left">
+            <p class="skewed-left">
+                We were told we could put anything here if we don't have projects to show off, so I logically placed this amazing cat as a project placeholder.
+                Fun fact, this writing is also a placeholder! Bet you didn't expect that, huh?
+                This project involves... bleh bleh bleh, meow meow meow (cat noises).
+            </p>
+        </div>
+    </article>
+</div>
+
+<div id="footer"></div>
+</body>
+
+<script>
+    fetch('../templates/header.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('header').innerHTML = data)
+        .catch(err => console.error('Failed to load header:', err));
+</script>
+<script>
+    fetch('../templates/footer.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('footer').innerHTML = data)
+        .catch(err => console.error('Failed to load footer:', err));
+</script>
